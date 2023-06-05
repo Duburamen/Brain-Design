@@ -644,16 +644,17 @@
           <div class="hero__container _container">
             <div class="hero__body">
               <div class="hero__image">
-                <img
-                  src="img/main/hero/hero-image-mobile.png"
-                  alt="Brain design"
-                  class="hero__image-mobile"
-                />
-                <img
-                  src="img/main/hero/hero-image-desktop.png"
-                  alt="Brain design"
-                  class="hero__image-desktop"
-                />
+                <picture>
+                  <source
+                    srcset="img/main/hero/hero-image-desktop.png"
+                    media="(min-width: 768px)"
+                  />
+                  <img
+                    src="img/main/hero/hero-image-mobile.png"
+                    alt="Brain design"
+                    class="hero__image-mobile"
+                  />
+                </picture>
               </div>
               <div class="hero__about">
                 <p>Веб-студия - полного цикла.</p>
@@ -759,6 +760,84 @@
                     <a href="#" class="button">Обсудить детали</a>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page-main__portfolio portfolio">
+          <div class="portfolio__container _container">
+            <div class="portfolio__body">
+              <div class="portfolio__title title">Портфолио</div>
+              <div class="portfolio__list list">
+                <div class="list__work work-first">
+                  <a href="#">
+                    <img
+                      src="img/main/portfolio/portfolio-candles.jpg"
+                      alt="Website for candles"
+                      class="list__image"
+                    />
+                  </a>
+                  <h3 class="list__title">
+                    <a href="">Интернет магазин ароматических свечей</a>
+                  </h3>
+                </div>
+                <div class="list__work work-second">
+                  <a href="#">
+                    <picture>
+                      <source
+                        srcset="img/main/portfolio/portfolio-outstaff_desktop.jpg"
+                        media="(min-width: 1280px)"
+                      />
+                      <img
+                        src="img/main/portfolio/portfolio-outstaff.jpg"
+                        alt="Website for outstaff"
+                        class="list__image"
+                      />
+                    </picture>
+                  </a>
+                  <h3 class="list__title">
+                    <a href="#">Разработка сайта компании для аутстаффинговой компании АКР</a>
+                  </h3>
+                </div>
+                <div class="list__work work-third">
+                  <a href="#">
+                    <img
+                      src="img/main/portfolio/portfolio-chalet.jpg"
+                      alt="Website for chalet"
+                      class="list__image"
+                    />
+                  </a>
+                  <h3 class="list__title">
+                    <a href="#">Дизайн для Роса Шале</a>
+                  </h3>
+                </div>
+                <div class="list__work work-fourth list__work_desktop">
+                  <a href="#">
+                    <img
+                      src="img/main/portfolio/portfolio-builders.jpg"
+                      alt="Website for builders"
+                      class="list__image"
+                    />
+                  </a>
+                  <h3 class="list__title">
+                    <a href="#">Сайт для бригады строителей</a>
+                  </h3>
+                </div>
+                <div class="list__work work-fifth list__work_desktop">
+                  <a href="#">
+                    <img
+                      src="img/main/portfolio/portfolio-crm.jpg"
+                      alt="CRM system"
+                      class="list__image"
+                    />
+                  </a>
+                  <h3 class="list__title">
+                    <a href="#">CRM-системы для строительной компании</a>
+                  </h3>
+                </div>
+              </div>
+              <div class="portfolio__btn">
+                <a href="#" class="button">Смотреть другие проекты</a>
               </div>
             </div>
           </div>
