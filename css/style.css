@@ -747,7 +747,6 @@ body._locked {
   }
 
   .list__work {
-    
     max-width: 32rem;
   }
 
@@ -800,7 +799,7 @@ body._locked {
 
 .growth__item:nth-child(odd) {
   margin-left: 1rem;
-  justify-content: flex-start;
+  align-self: flex-start;
 }
 
 .growth__item:nth-child(even) {
@@ -809,22 +808,112 @@ body._locked {
 
 .growth__item::before {
   position: absolute;
-  /* text-shadow: 0px 0px 5px red; */
-  /* box-shadow: 0 0 1rem #35c4e8; */
   filter: blur(1px) brightness(2);
   top: 50%;
   left: 0;
   content: "\2022";
-  color: #35C4E8;
+  color: #35c4e8;
   font-weight: bold;
 }
 
 .growth__date {
   font-size: 1.7rem;
   font-weight: 700;
-  color: #35C4E8;
+  color: #35c4e8;
 }
 
 .growth__highlight {
   font-weight: 700;
+}
+
+@media (min-width: 1200px) {
+  .page-main__growth {
+    padding-top: 12rem;
+  }
+
+  .growth__list::after {
+    position: absolute;
+    right: 50%;
+    content: '';
+    background-color: #35c4e8;
+    box-shadow: 0 0 0.5rem #35c4e8;
+    width: 2px;
+    height: 80rem;
+  }
+
+  .growth__item {
+    padding-left: 0;
+    display: flex;
+    position: relative;
+    max-width: 40ch;
+  }
+
+  .growth__item::before {
+    display: none;
+  }
+
+  .growth__item::after {
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+  }
+
+  .growth__item:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .growth__item:nth-child(odd) {
+    margin: 0 10rem 0 0;
+    position: relative;
+    align-self: flex-end;
+  }
+
+  .growth__item:nth-child(odd)::after {
+    left: -4.15rem;
+    content: url(../img/main/growth/growth-list-style_big.svg);
+  }
+
+  .growth__item:nth-child(even) {
+    margin-left: 10rem;
+    position: relative;
+    text-align: right;
+    align-self: flex-start;
+  }
+
+  .growth__item:nth-child(even)::after {
+    right: -3.77rem;
+    content: url(../img/main/growth/growth-list-style_small.svg);
+  }
+
+  .growth__date {
+    font-size: 5rem;
+    font-weight: 700;
+    color: #ffffff;
+  }
+
+  .growth__highlight {
+    font-weight: 400;
+  }
+}
+
+@media (min-width: 960px) {
+  
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .growth__item:nth-child(odd) {
+    margin-left: 20%;
+    align-self: flex-start;
+  }
+  
+  .growth__item:nth-child(even) {
+    margin-right: 20%;
+    align-self: flex-end;
+  }
+
+  .growth__date {
+    font-size: 2.7rem;
+    font-weight: 700;
+    color: #35c4e8;
+  }
 }
