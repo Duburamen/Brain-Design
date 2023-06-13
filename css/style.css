@@ -84,14 +84,86 @@ body._locked {
   }
 }
 
-input[type=text] {
+input[type="text"] {
   padding: 1.5rem 1rem;
-  color: #FFFFFF99;
+  color: #ffffff;
   background-color: transparent;
   font-size: 1.5rem;
   width: 90%;
   border-bottom: 2px solid #35c4e8;
   outline: none;
+}
+
+input[type="email"] {
+  padding: 1.5rem 1rem;
+  color: #ffffff;
+  background-color: transparent;
+  font-size: 1.5rem;
+  width: 90%;
+  border-bottom: 2px solid #35c4e8;
+  outline: none;
+}
+
+input[type="checkbox"] {
+  display: grid;
+  place-content: center;
+  appearance: none;
+  background-color: transparent;
+  margin: 0;
+  font: inherit;
+  color: #35c4e8;
+  width: 2.4rem;
+  height: 2.4rem;
+  border: 2px solid #35c4e8;
+  border-radius: 5px;
+  transform: translateY(-0.075em);
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  background-color: #35c4e8;
+  width: 1.2rem;
+  height: 1.2rem;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+}
+
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
+input[type="submit"] {
+  padding: 1rem 9rem;
+  font-size: 1.5rem;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+textarea {
+  padding: 1.5rem 1rem;
+  color: #ffffff;
+  background-color: transparent;
+  font-size: 1.5rem;
+  font-family: Open Sans;
+  width: 90%;
+  border-bottom: 2px solid #35c4e8;
+  outline: none;
+}
+
+@media (min-width: 1200px) {
+  input[type="submit"] {
+    padding: 1rem 3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  input[type="text"],
+  input[type="email"],
+  input[type="checkbox"],
+  input[type="submit"],
+  textarea {
+    font-size: 2rem;
+  }
 }
 
 /* HEADER */
@@ -837,14 +909,10 @@ input[type=text] {
 }
 
 @media (min-width: 1200px) {
-  .page-main__growth {
-    padding-top: 12rem;
-  }
-
   .growth__list::after {
     position: absolute;
     right: 50%;
-    content: '';
+    content: "";
     background-color: #35c4e8;
     box-shadow: 0 0 0.5rem #35c4e8;
     width: 2px;
@@ -906,12 +974,19 @@ input[type=text] {
   }
 }
 
+@media (min-width: 768px) {
+  .page-main__growth {
+    padding-top: 12rem;
+  }
+}
+
 @media (min-width: 768px) and (max-width: 1200px) {
+  
   .growth__item:nth-child(odd) {
     margin-left: 20%;
     align-self: flex-start;
   }
-  
+
   .growth__item:nth-child(even) {
     margin-right: 20%;
     align-self: flex-end;
@@ -934,6 +1009,8 @@ input[type=text] {
 }
 
 .vacancy__container {
+  background: url(../img/main/vacancy/vacancy-background.jpg) no-repeat;
+  background-position: center;
 }
 
 .vacancy__body {
@@ -942,7 +1019,12 @@ input[type=text] {
 .vacancy__title {
 }
 
+.vacancy__content {
+  backdrop-filter: blur(10px);
+}
+
 .vacancy__text {
+  margin: 0 0 2rem 1rem;
   margin-left: 1rem;
   position: relative;
   line-height: 133%;
@@ -951,7 +1033,7 @@ input[type=text] {
 .vacancy__text::before {
   position: absolute;
   left: -1rem;
-  content: '';
+  content: "";
   background-color: #35c4e8;
   box-shadow: 0 0 0.5rem #35c4e8;
   height: 100%;
@@ -969,5 +1051,76 @@ input[type=text] {
   margin-bottom: 1rem;
 }
 
-.vacancy__checkbox {
+.vacany__textarea {
+  margin-bottom: 1rem;
+}
+
+.vacancy__check {
+  margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: 3rem auto;
+  line-height: 133%;
+}
+
+.vacancy__check label {
+  margin-left: 0.5rem;
+}
+
+.vacancy__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vacancy__submit {
+}
+
+@media (min-width: 1200px) {
+  .vacancy__container {
+    background: url(../img/main/vacancy/vacancy-background-desktop.png) no-repeat;
+    background-position: center;
+  }
+
+  .vacancy__content {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .vacancy__text {
+    flex: 1 1 55%;
+    margin-bottom: 0;
+    padding: 12.3rem 7rem 12.3rem 0;
+    max-width: 45ch;
+  }
+
+  .vacancy__text::before {
+    height: 52%;
+  }
+
+  .vacancy__form {
+    flex: 1 1 50%;
+    padding: 4rem 3rem 4rem 4rem;
+  }
+
+  .vacancy__input {
+    margin-bottom: 1.5rem;
+  }
+
+  .vacany__textarea {
+    margin-bottom: 1.5rem;
+  }
+
+  .vacancy__check {
+    margin-bottom: 3rem;
+  }
+
+  .vacancy__btn {
+    justify-content: start;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-main__vacancy {
+    padding-top: 12rem;
+  }
 }

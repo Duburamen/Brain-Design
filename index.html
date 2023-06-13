@@ -920,58 +920,65 @@
           <div class="vacancy__container _container">
             <div class="vacancy__body">
               <div class="vacancy__title title">Вакансии</div>
-              <div class="vacancy__text">
-                <p>Мы всегда ищем талантливых специалистов.</p>
-                <br />
-                <p>
-                  Если Вы любите свою работу, умеете работать в команде, уважаете себя, коллег и
-                  клиентов, заинтересованы в профессиональном и карьерном росте, ориентированы на
-                  результат и качество, будем рады работать с вами.
-                </p>
-                <br />
-                <p>
-                  Заполните форму на сайте или пришлите резюме на почту:
-                  <a class="vacancy__link" href="mailto:info@brainarti.ru">info@brainarti.ru</a>
-                </p>
-              </div>
-              <form class="vacancy__form">
-                <input
-                  type="text"
-                  name="name"
-                  class="vacancy__input"
-                  maxlength="50"
-                  placeholder="Напишите ваше имя"
-                  required
-                />
-                <input
-                  type="email"
-                  name="email"
-                  class="vacancy__input"
-                  maxlength="50"
-                  placeholder="Введите электронную почту"
-                  required
-                />
-                <textarea
-                  name="wish"
-                  id="wish"
-                  cols="50"
-                  rows="5"
-                  maxlength="400"
-                  placeholder="Напишите ваши пожелания"
-                >
-                </textarea>
-                <div class="vacancy__checkbox">
+              <div class="vacancy__content">
+                <div class="vacancy__text">
+                  <p>Мы всегда ищем талантливых специалистов.</p>
+                  <br />
+                  <p>
+                    Если Вы любите свою работу, умеете работать в команде, уважаете себя, коллег и
+                    клиентов, заинтересованы в профессиональном и карьерном росте, ориентированы на
+                    результат и качество, будем рады работать с вами.
+                  </p>
+                  <br />
+                  <p>
+                    Заполните форму на сайте или пришлите резюме на почту:
+                    <a class="vacancy__link" href="mailto:info@brainarti.ru">
+                      <b>info@brainarti.ru</b></a
+                    >
+                  </p>
+                </div>
+                <form class="vacancy__form" method="post">
                   <input
-                    type="checkbox"
-                    name="agreement"
+                    type="text"
+                    name="name"
                     class="vacancy__input"
-                    id="agreement"
+                    maxlength="50"
+                    placeholder="Напишите ваше имя"
                     required
                   />
-                  <label for="agreement">Даю согласие на обработку персональных данных</label>
-                </div>
-                <input type="submit" value="Отправить" />
-              </form>
+                  <input
+                    type="email"
+                    name="email"
+                    class="vacancy__input"
+                    maxlength="50"
+                    placeholder="Введите электронную почту"
+                    required
+                  />
+                  <textarea
+                    name="wish"
+                    class="vacany__textarea"
+                    id="wish"
+                    cols="50"
+                    rows="4"
+                    maxlength="400"
+                    placeholder="Напишите ваши пожелания"
+                  >
+                  </textarea>
+                  <div class="vacancy__check">
+                    <input
+                      type="checkbox"
+                      name="agreement"
+                      class="vacancy__input"
+                      id="agreement"
+                      required
+                    />
+                    <label for="agreement">Даю согласие на обработку персональных данных</label>
+                  </div>
+                  <div class="vacancy__btn">
+                    <input type="submit" class="vacancy__submit button" value="Отправить" />
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
         </section>
