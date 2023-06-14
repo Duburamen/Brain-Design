@@ -981,7 +981,6 @@ textarea {
 }
 
 @media (min-width: 768px) and (max-width: 1200px) {
-  
   .growth__item:nth-child(odd) {
     margin-left: 20%;
     align-self: flex-start;
@@ -1122,5 +1121,97 @@ textarea {
 @media (min-width: 768px) {
   .page-main__vacancy {
     padding-top: 12rem;
+  }
+}
+
+/* ARTICLES */
+
+.page-main__articles {
+  padding-top: 4rem;
+}
+
+.articles {
+}
+
+.articles__container {
+}
+
+.articles__body {
+}
+
+.articles__title {
+}
+
+.articles__content {
+}
+
+.articles__item {
+  margin-bottom: 2rem;
+}
+
+.articles__item:last-child {
+  display: none;
+}
+
+.articles__name {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.articles__text {
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 133%;
+}
+
+.articles__link {
+}
+
+.articles__link a {
+  padding-right: 1.5rem;
+  font-weight: 700;
+  color: #35c4e8;
+  background: url(../img/main/articles/link-chevron.svg) no-repeat;
+  background-position: right;
+}
+
+.articles__btn {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 1200px) {
+  .articles__name {
+    margin-bottom: 1.5rem;
+  }
+
+  .articles__text {
+    margin-bottom: 1.5rem;
+    -webkit-line-clamp: 5;
+  }
+
+  .articles__btn {
+    justify-content: start;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-main__articles {
+    padding-top: 12rem;
+  }
+
+  .articles__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2rem;
+  }
+
+  .articles__item:last-child {
+    display: block;
   }
 }
