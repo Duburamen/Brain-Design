@@ -150,6 +150,13 @@ textarea {
   outline: none;
 }
 
+.checkbox {
+  margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: 3rem auto;
+  line-height: 133%;
+}
+
 @media (min-width: 1200px) {
   input[type="submit"] {
     padding: 1rem 3rem;
@@ -1055,10 +1062,6 @@ textarea {
 }
 
 .vacancy__check {
-  margin-bottom: 2rem;
-  display: grid;
-  grid-template-columns: 3rem auto;
-  line-height: 133%;
 }
 
 .vacancy__check label {
@@ -1213,5 +1216,162 @@ textarea {
 
   .articles__item:last-child {
     display: block;
+  }
+}
+
+/* BOTTOM */
+
+@media (min-width: 1200px) {
+  .bottom {
+    background: url(../img/main/bottom/bottom-background-desktop.svg) no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+}
+
+/* ANY */
+
+.page-main__any {
+  padding-top: 4rem;
+}
+
+.any {
+}
+
+.any__container {
+}
+
+.any__body {
+}
+
+.any__title {
+}
+
+.any__title span {
+  color: #35c4e8;
+}
+
+.any__text {
+  max-width: 60ch;
+  line-height: 133%;
+}
+
+.any__text a {
+  font-weight: 700;
+}
+
+.any__text a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .page-main__any {
+    padding-top: 12rem;
+  }
+}
+
+/* REQUEST */
+
+.page-main__request {
+  padding-top: 4rem;
+}
+
+.request__body {
+}
+
+.request__title {
+}
+
+.request__title span {
+  display: none;
+}
+
+.request__info {
+}
+
+.request__text {
+  margin-bottom: 1.5rem;
+  line-height: 133%;
+}
+
+.request__text span {
+  font-weight: 700;
+}
+
+.request__contacts {
+  margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.request__phone {
+}
+
+.request__phone a,
+.request__email a {
+  display: inline-block;
+  margin-top: 1rem;
+  font-weight: 700;
+}
+
+.request__phone a:hover,
+.request__email a:hover {
+  text-decoration: underline;
+}
+
+.request__email {
+}
+
+.request__form {
+  background: url(../img/main/bottom/bottom-background.svg) no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.request__input {
+}
+
+.request__textarea {
+  margin-bottom: 1.5rem;
+}
+
+.request__check {
+}
+
+.request__btn {
+  display: flex;
+  justify-content: center;
+}
+
+.request__submit {
+}
+
+@media (min-width: 1200px) {
+  .request__content {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .request__info {
+    padding-left: 7rem;
+    flex: 1 1 90%;
+  }
+
+  .request__title span {
+    display: inline;
+  }
+
+  .request__form {
+    background: none;
+  }
+
+  .request__btn {
+    justify-content: start;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-main__request {
+    padding-top: 12rem;
   }
 }

@@ -962,9 +962,8 @@
                     rows="4"
                     maxlength="400"
                     placeholder="Напишите ваши пожелания"
-                  >
-                  </textarea>
-                  <div class="vacancy__check">
+                  ></textarea>
+                  <div class="vacancy__check checkbox">
                     <input
                       type="checkbox"
                       name="agreement"
@@ -1031,6 +1030,89 @@
             </div>
           </div>
         </article>
+        <section class="page-main__bottom bottom">
+          <section class="page-main__any any">
+            <div class="any__container _container">
+              <div class="any__body">
+                <div class="any__title title">
+                  Мы берем проекты <span>любой</span> <br />
+                  сложности
+                </div>
+                <div class="any__text">
+                  Мы готовы обсудить ваш проект. Вместе с вами сформулируем цели и поставим задачи.
+                  Мы ответим на все ваши вопросы и составим индивидуальное предложение. Для этого
+                  оставьте заявку на сайте или позвоните по номеру:
+                  <a href="tel:+89263400059">+8 (926) 340 00 59</a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="page-main__request request">
+            <div class="request__container _container">
+              <div class="request__body">
+                <div class="request__title title">Оставить заявку <span>на консультацию</span></div>
+                <div class="request__content">
+                  <div class="request__info">
+                    <div class="request__text">
+                      <span>Заполните ваши данные.</span> В ближайшее время мы с вами свяжемся и
+                      ответим на все вопросы
+                    </div>
+                    <div class="request__contacts">
+                      <div class="request__phone">
+                        Телефон: <br />
+                        <a href="tel:+89263400059">+8 (926) 340 00 59</a>
+                      </div>
+                      <div class="request__email">
+                        Электронная почта <br />
+                        <a href="mailto:info@brainarti.ru">info@brainarti.ru</a>
+                      </div>
+                    </div>
+                  </div>
+                  <form class="request__form" method="post">
+                    <input
+                      type="text"
+                      name="name"
+                      class="request__input"
+                      maxlength="50"
+                      placeholder="Напишите ваше имя"
+                      required
+                    />
+                    <input
+                      type="email"
+                      name="email"
+                      class="request__input"
+                      maxlength="50"
+                      placeholder="Введите электронную почту"
+                      required
+                    />
+                    <textarea
+                      name="wish"
+                      class="request__textarea"
+                      id="wish"
+                      cols="50"
+                      rows="4"
+                      maxlength="400"
+                      placeholder="Напишите ваши пожелания"
+                    ></textarea>
+                    <div class="request__check checkbox">
+                      <input
+                        type="checkbox"
+                        name="agreement-bottom"
+                        class="request__input"
+                        id="agreement-bottom"
+                        required
+                      />
+                      <label for="agreement-bottom">Даю согласие на обработку персональных данных</label>
+                    </div>
+                    <div class="request__btn">
+                      <input type="submit" class="request__submit button" value="Отправить" />
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
       </main>
     </div>
   </body>
